@@ -1,3 +1,8 @@
+(function(){
+    emailjs.init("En0qgQdIjU48kHFpT");
+ })();
+
+
 let menu = document.querySelector('.menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -30,9 +35,10 @@ sendBtn.addEventListener('click',(e)=>{
 }
 validate();
 
+
 function sendmail(name,email,msg){
-    emailjs.send("service_7wj34je","template_7goidyf",{
-        from_name: email,
+    emailjs.send("service_7wj34je","template_qi0hyas",{
+        from_name:  email,
         to_name: name,
         message: msg,
         });
@@ -46,13 +52,13 @@ function emptyerror(){
       });  
 }
 
-// function success(){
-//     swal({
-//         title: "Email sent successfully",
-//         text: "i try to reply in 24 hours",
-//         icon:"success",
-//       });  
-// }
+function success(){
+    swal({
+        title: "Email sent successfully",
+        text: "i try to reply in 24 hours",
+        icon:"success",
+      });  
+
 
 
 let header = document.querySelector("header");
@@ -66,4 +72,11 @@ let scrollTop = document.querySelector(".scroll-top");
 window.addEventListener('scroll',()=>{
     scrollTop.classList.toggle('scroll-active',window.scrollY>=400) 
 })
+}
+validate()
+
+
+
+
+
 
