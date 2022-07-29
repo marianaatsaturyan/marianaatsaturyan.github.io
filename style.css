@@ -327,6 +327,12 @@ border-radius: 4px;
     font-size: 1rem;
     font-weight: 400;
 }
+.footer .bx{
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .scroll-top{
     position: fixed;
     bottom:-100%;
